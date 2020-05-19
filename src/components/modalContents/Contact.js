@@ -15,7 +15,7 @@ export default function Contact () {
         </div>
         <div>
           <div className="small-title">resume</div>
-          <a href="http://localhost:3000/songjiyeon_resume.pdf" download="resume_songjiyeon.pdf">Download</a>
+          <a href="http://www.songcarol.com/songjiyeon_resume.pdf" download="resume_songjiyeon.pdf">Download</a>
         </div>
       </div>
     </div>

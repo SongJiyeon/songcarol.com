@@ -30,7 +30,7 @@ export default function Home() {
   function keyDown(e) {
     switch (e.key) {
       case 'ArrowLeft':
-        charRef.current.src = "http://localhost:3000/character_left.gif";
+        charRef.current.src = "http://www.songcarol.com/character_left.gif";
         if (left - DEST_SIZE < STEP) {
           setLeft(DEST_SIZE);
           charRef.current.style.left = `${DEST_SIZE}px`;
@@ -41,7 +41,7 @@ export default function Home() {
         charRef.current.style.left = `${left - STEP}px`;
         return;
       case 'ArrowRight':
-        charRef.current.src = "http://localhost:3000/character_right.gif";
+        charRef.current.src = "http://www.songcarol.com/character_right.gif";
         if (left + DEST_SIZE + CHAR_SIZE + STEP > WIDTH) {
           setLeft(WIDTH - (DEST_SIZE + CHAR_SIZE));
           charRef.current.style.left = `${WIDTH - (DEST_SIZE + CHAR_SIZE)}px`;
