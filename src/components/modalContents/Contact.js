@@ -13,7 +13,7 @@ export default function Contact () {
         </div>
         <div>
           <div className="small-title">github</div>
-          <a className="content" href="https://www.github.com/SongJiyeon">https://www.github.com/SongJiyeon</a>
+          <a className="content" href="https://github.com/SongJiyeon">https://github.com/SongJiyeon</a>
         </div>
         <div>
           <div className="small-title">resume</div>
