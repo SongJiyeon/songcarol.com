@@ -4,6 +4,12 @@ import { STEP, CHAR_SIZE, DEST_SIZE, WIDTH, HEIGHT } from '../constants/index';
 import useModalOpen from '../hooks/useModalOpen';
 import useRenderMode from '../hooks/useRenderMode';
 
+import charLeft from '../assets/character_left.gif';
+import charRight from '../assets/character_right.gif';
+import planetProfile from '../assets/planet_profile.png';
+import planetWork from '../assets/planet_work.png';
+import planetContact from '../assets/planet_contact.png';
+
 export default function Home() {
   const { setModalStatus } = useModalOpen();
   const { onModeChange } = useRenderMode();
@@ -30,7 +36,7 @@ export default function Home() {
   function keyDown(e) {
     switch (e.key) {
       case 'ArrowLeft':
-        charRef.current.src = "http://www.songcarol.com/character_left.gif";
+        charRef.current.src = charLeft;
         if (left - DEST_SIZE < STEP) {
           setLeft(DEST_SIZE);
           charRef.current.style.left = `${DEST_SIZE}px`;
@@ -41,7 +47,7 @@ export default function Home() {
         charRef.current.style.left = `${left - STEP}px`;
         return;
       case 'ArrowRight':
-        charRef.current.src = "http://www.songcarol.com/character_right.gif";
+        charRef.current.src = charRight;
         if (left + DEST_SIZE + CHAR_SIZE + STEP > WIDTH) {
           setLeft(WIDTH - (DEST_SIZE + CHAR_SIZE));
           charRef.current.style.left = `${WIDTH - (DEST_SIZE + CHAR_SIZE)}px`;
@@ -94,18 +100,18 @@ export default function Home() {
     <div className="container">
       <div className="container-layer"></div>
       <div className="dest-box profile">
-        <img className="dest" src="planet_profile.png" alt="earth" />
+        <img className="dest" src={planetProfile} alt="earth" />
         <div className="dest-title">Profile</div>
       </div>
       <div className="dest-box my-work">
-        <img className="dest" src="planet_work.png" alt="planet" />
+        <img className="dest" src={planetWork} alt="planet" />
         <div className="dest-title">My Work</div>
       </div>
       <div className="dest-box contact">
-        <img className="dest" src="planet_contact.png" alt="planet" />
+        <img className="dest" src={planetContact} alt="planet" />
         <div className="dest-title">Contact</div>
       </div>
-      <img className="char" src="character_right.gif" ref={charRef} alt="owner character" />
+      <img className="char" src={charLeft} ref={charRef} alt="owner character" />
     </div>
   );
 }

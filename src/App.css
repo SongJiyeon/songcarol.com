@@ -34,7 +34,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background: url('./images/background.gif');
+  background: url('./assets/background.gif');
 }
 
 .container-layer {

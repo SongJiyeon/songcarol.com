@@ -1,12 +1,14 @@
 import React from 'react';
 
+import profileImg from '../../assets/profile.png';
+
 export default function Profile() {
   return (
     <div className="content-container">
       <div className="title">Profile</div>
       <div className="profile-box">
         <div>
-          <img className="img profile-img" src="profile.png" alt="" />
+          <img className="img profile-img" src={profileImg} alt="" />
           <div className="name">Song Jiyeon</div>
           <div className="sub-name">Frontend Web Developer</div>
         </div>

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import pixfie from '../../assets/pixfie.gif';
+import dependency from '../../assets/dependency-summary.gif';
+
 export default function MyWork () {
   return (
     <div className="content-container">
@@ -7,7 +10,7 @@ export default function MyWork () {
       <div className="my-work-box">
         <div>
           <div className="work-img-box">
-            <img className="img pixfie-img" src="pixfie.gif" alt="" />
+            <img className="img pixfie-img" src={pixfie} alt="" />
           </div>
           <div>
             <div className="small-title">pixfie</div>
@@ -19,7 +22,7 @@ export default function MyWork () {
         </div>
         <div>
           <div className="work-img-box">
-            <img className="img dependency-img" src="dependency-summary.gif" alt="" />
+            <img className="img dependency-img" src={dependency} alt="" />
           </div>
           <div>
             <div className="small-title">dependency summary</div>
