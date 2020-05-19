@@ -1,38 +1,174 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Press+Start+2P&family=Ubuntu+Mono&display=swap');
+
+* {
+  font-size: 30px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.work-img-box {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 200px;
+}
+
+.img {
+  margin: auto;
+}
+
+.profile-img {
+  width: 300px;
+  height: 350px;
+}
+
+.pixfie-img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.dependency-img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url('./images/background.gif');
+}
+
+.container-layer {
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.modal {
+  position: absolute;
+  z-index: 2;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.modal-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.modal-box {
+  position: absolute;
+  top: calc(100vh / 2 - 300px);
+  left: calc(100vw / 2 - 500px);
+  z-index: 3;
+  width: 1000px;
+  height: 600px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.dest-box {
+  position: absolute;
+}
+
+.dest {
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+}
+
+.profile {
+  top: 0px;
+  left: calc(100vw / 2 - 110px);
+}
+
+.my-work {
+  top: calc(100vh / 2 - 110px);
+  left: 0px;
+}
+
+.contact {
+  top: calc(100vh / 2 - 110px);
+  left: calc(100vw - 220px);
+}
+
+.dest-title {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  z-index: 1;
+}
+
+.char {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+}
+
+.content-container {
+  justify-content: center;
+  padding: 50px;
+}
+
+.profile-box {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-box > div {
+  margin: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-content-box > div {
+  margin: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sub-name {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.small-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.my-work-box > div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-box {
+  margin-top: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-box > div {
+  margin: 20px;
 }
+
+
