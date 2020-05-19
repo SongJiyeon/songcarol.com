@@ -17,7 +17,7 @@ export default function MyWork () {
             <div className="project-description">
               <p>Face recognition mobile app that converts selfies into pixel character</p>
             </div>
-            <a className="github" href="https://www.github.com/SongJiyeon/pixfie">https://www.github.com/SongJiyeon/pixfie</a>
+            <a className="github" href="https://github.com/SongJiyeon/pixfie-frontend">https://github.com/SongJiyeon/pixfie-frontend</a>
           </div>
         </div>
         <div>
@@ -29,7 +29,7 @@ export default function MyWork () {
             <div className="project-description">
               <p>Desktop app that summarizes information about project module usage and dependency</p>
             </div>
-            <a className="github" href="https://www.github.com/SongJiyeon/dependency-summary">https://www.github.com/SongJiyeon/dependency-summary</a>
+            <a className="github" href="https://github.com/SongJiyeon/dependency-summary">https://github.com/SongJiyeon/dependency-summary</a>
           </div>
         </div>
       </div>

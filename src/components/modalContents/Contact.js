@@ -1,5 +1,7 @@
 import React from 'react';
 
+import resume from '../../assets/songjiyeon_resume.pdf';
+
 export default function Contact () {
   return (
     <div className="content-container">
@@ -15,7 +17,7 @@ export default function Contact () {
         </div>
         <div>
           <div className="small-title">resume</div>
-          <a href="http://www.songcarol.com/songjiyeon_resume.pdf" download="resume_songjiyeon.pdf">Download</a>
+          <a href={resume} download="resume_songjiyeon.pdf">Download</a>
         </div>
       </div>
     </div>
